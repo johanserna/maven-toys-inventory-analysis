@@ -1,6 +1,6 @@
 # 📦 Maven Toys — Inventory & Replenishment Analysis
 
-Power BI project designed to answer a simple retail question:
+Power BI portfolio project built with **synthetic retail data** to simulate a real inventory and replenishment problem.
 
 > **What products should be replenished, in which stores, and how many units should be ordered?**
 
@@ -8,13 +8,13 @@ Power BI project designed to answer a simple retail question:
 
 ## 🎯 Business Problem
 
-In this portfolio scenario, sales, product, store and inventory data were available, but it was difficult to quickly identify **where stock shortages could occur and what should be replenished first**.
+For this fictional retail scenario, sales, product, store and inventory data were created to simulate a common business challenge: identifying **where stock shortages could occur and what should be replenished first**.
 
-I built a Power BI solution that converts this data into inventory and replenishment recommendations.
+I built a Power BI solution that transforms this data into inventory and replenishment recommendations.
 
 **Sales Files → Power Query → Data Model → DAX → Dashboard**
 
-The analysis uses recent sales and current stock to estimate:
+Using recent sales and current stock, the report estimates:
 
 - Average daily demand
 - Inventory coverage
@@ -24,13 +24,19 @@ The analysis uses recent sales and current stock to estimate:
 
 The scenario assumes **7 days of delivery time, 3 days of safety reserve and 14 additional days of coverage**.
 
+## 📊 Dashboard Overview
+
+The main dashboard shows where inventory pressure is concentrated and which stores require the largest replenishment orders.
+
+![Dashboard Overview](images/overview.png)
+
 ## 🚨 Replenishment Priorities
 
 Products are prioritized according to their inventory situation:
 
 **Out of Stock → Urgent → Replenish**
 
-This allows users to identify which products require attention and the suggested quantity to order.
+This helps identify which products require immediate attention and how many units should be ordered.
 
 ![Replenishment Center](images/centro_reposicion_1.png)
 
@@ -38,13 +44,21 @@ This allows users to identify which products require attention and the suggested
 
 Users can drill through to a specific product and store to understand **why a replenishment order is being recommended**.
 
-The detail view compares current stock, recent demand, coverage, reorder point and target stock.
+The detailed view compares:
+
+- Current stock
+- Recent sales
+- Average daily demand
+- Inventory coverage
+- Reorder point
+- Target stock
+- Suggested order quantity
 
 ![Product Detail](images/detalle_producto_tienda.png)
 
 ## 🔄 Data Preparation
 
-Sales files were consolidated and cleaned using **Power Query** and connected with product, store and inventory information in Power BI.
+Sales files were consolidated and cleaned using **Power Query** and then connected with product, store and inventory information in Power BI.
 
 The workflow allows new sales files to be incorporated through a refresh instead of rebuilding the analysis manually.
 
@@ -60,10 +74,6 @@ The workflow allows new sales files to be incorporated through a refresh instead
 
 ### About
 
-Portfolio project based on the **Maven Toys dataset**, focused on transforming operational data into a practical inventory decision tool.
+This is a **fictional portfolio project built with synthetic data**.
 
----
-
-### About
-
-Portfolio project based on the Maven Toys dataset, created to demonstrate how raw operational data can be transformed into a practical inventory decision tool.
+Maven Toys is used as a simulated retail business to demonstrate how Power BI, Power Query and DAX can transform operational data into practical inventory and replenishment decisions.
