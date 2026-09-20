@@ -54,7 +54,7 @@ The detailed view compares:
 - Target stock
 - Suggested order quantity
 
-![Product Detail](images/detalle_producto_tienda.png)
+![Product Detail](images/detalle_producto_tienda_1.png)
 
 ## 🔄 Data Preparation
 
